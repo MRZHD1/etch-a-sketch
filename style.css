@@ -1,0 +1,40 @@
+html, body {
+    margin:0px;
+    height:100%
+}
+#header {
+    display:flex;
+    background-color:antiquewhite;
+    height:100px;
+    justify-content: center;
+    align-items: center;
+}
+#header > * {
+    font-size: 42px;
+    
+}
+.page {
+    display: flex;
+    
+}
+.left, .right {
+    flex: 1 1 auto;
+    background-color: antiquewhite;
+}
+.grid-container {
+    display: grid;
+    flex-direction: row;
+    gap: 1px;
+    height:700px;
+    width:700px;
+    
+  }
+.grid {
+    background-color: rgb(190, 190, 190);
+    height:auto;
+    width: auto;
+}
+
+.grid:hover {
+    background-color: black;
+}

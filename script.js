@@ -34,9 +34,7 @@ function colors() {
         colorBox.appendChild(box)
     }
 }
-function color(color) {
-    
-}
+
 function grid_items(num) {
     const grid_container = document.querySelector('.grid-container');
     grid_container.innerHTML = ""

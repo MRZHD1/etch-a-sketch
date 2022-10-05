@@ -4,7 +4,7 @@ html, body {
 }
 #header {
     display:flex;
-    background-color:antiquewhite;
+    background-color:rgb(255, 246, 235);
     height:100px;
     justify-content: center;
     align-items: center;
@@ -18,8 +18,65 @@ html, body {
     
 }
 .left, .right {
-    flex: 1 1 auto;
-    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding:10px;
+    padding-top: 50px;
+    background-color: rgb(255, 246, 235);
+}
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.colors {
+    display: grid;
+    padding-top: 50px;
+    flex-direction: row;
+    gap:20px;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.colors > * {
+    height: 75px;
+    width: 75px;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.purple {
+    background-color: purple;
+}
+.orange {
+    background-color: orange;
+}
+.brown {
+    background-color: brown;
+}
+.black {
+    background-color: black;
+}
+.rgb {
+    background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
 }
 .grid-container {
     display: grid;
@@ -30,11 +87,16 @@ html, body {
     
   }
 .grid {
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(224, 224, 224);
     height:auto;
     width: auto;
 }
-
-.grid:hover {
-    background-color: black;
+#footer {
+    height: 100%;
+    width: auto;
+    background-color: rgb(255, 246, 235);
 }
+
+/* .grid:hover {
+    background-color: black;
+} */
